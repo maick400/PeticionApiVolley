@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="172dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="12dp"
+        android:hint="Ingrese la contraseña"
+        android:padding="12dp"
+        android:text=""
+       />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="230dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="12dp"
+        android:hint="Ingrese su contraseña"
+        android:padding="12dp"
+        android:password="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="307dp"
+        android:backgroundTint="@color/black"
+        android:onClick="btnIniciarSesion"
+        android:text="Iniciar sesión" />
+
+</RelativeLayout>
